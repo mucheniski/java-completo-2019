@@ -3,8 +3,7 @@ package entities;
 public class Account {
 	
 	private int number;
-	private String holder;
-	private double initialDeposit;
+	private String holder;	
 	private double balance;
 	
 	public Account() {}
@@ -26,14 +25,6 @@ public class Account {
 		this.holder = holder;
 	}
 
-	public double getInitialDeposit() {
-		return initialDeposit;
-	}
-
-	public void setInitialDeposit(double initialDeposit) {
-		this.initialDeposit = initialDeposit;
-	}
-
 	public double getBalance() {
 		return balance;
 	}
@@ -47,7 +38,7 @@ public class Account {
 	}
 	
 	public String toString() {
-		return "Account: " + getNumber() + ", Holder: " + getHolder() + String.format(", Balance: $ %.2f%n", getBalance());
+		return "Account: " + number + ", Holder: " + holder + String.format(", Balance: $ %.2f%n", balance);
 	}
 
 }

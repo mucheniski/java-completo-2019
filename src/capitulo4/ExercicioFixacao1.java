@@ -16,15 +16,15 @@ public class ExercicioFixacao1 {
 		int number = sc.nextInt();
 		
 		System.out.print("Enter account holder: ");
-		String holder = sc.nextLine();
-		sc.nextLine();
+		sc.nextLine(); // Consumir a quebra de linha do nextInt()
+		String holder = sc.nextLine();		
 		
 		System.out.print("Is there an initial deposit (y/n)? ");
-		String option = sc.nextLine();
+		char option = sc.next().charAt(0);
 		
 		Account account = new Account(number, holder);
 		
-		if (option.charAt(0) == 'y') {
+		if (option == 'y') {
 			System.out.print("Enter a initial deposit value: ");
 			double initialDeposit = sc.nextDouble();	
 			account.deposit(initialDeposit);
