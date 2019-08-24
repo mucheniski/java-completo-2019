@@ -6,11 +6,11 @@ public class Rectangle {
 	public Double height;
 	
 	public Double area() {
-		return (width * height) / 2;
+		return (width * height) / 2; // Inserir a formula correta
 	}
 	
 	public Double perimeter() {
-		return Math.pow(width, 3.0);
+		return Math.pow(width, 3.0); // Inserir a formula correta
 	}
 	
 	public Double diagonal() {
