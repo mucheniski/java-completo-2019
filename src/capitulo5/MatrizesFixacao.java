@@ -19,9 +19,7 @@ public class MatrizesFixacao {
 			for (int coluna = 0; coluna < matriz[linha].length; coluna++) {
 				matriz[linha][coluna] = sc.nextInt();
 			}			
-		}
-		
-		
+		}		
 		
 		int valor = sc.nextInt();		
 		
