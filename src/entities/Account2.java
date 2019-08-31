@@ -1,18 +1,17 @@
 package entities;
 
-public class Account {
+public class Account2 {
 
 	private Integer number;
-	private String holder;
-	protected Double balance;
+	private String holder;	
+	private Double balance;
 		
-	public Account() {
+	public Account2() {
 	}
 	
-	public Account(Integer number, String holder, Double balance) {
+	public Account2(Integer number, String holder) {
 		this.number = number;
 		this.holder = holder;
-		this.balance = balance;
 	}
 
 	public Integer getNumber() {
@@ -30,16 +29,17 @@ public class Account {
 	public void setHolder(String holder) {
 		this.holder = holder;
 	}
-
+	
 	public Double getBalance() {
 		return balance;
 	}
-
+	
 	public void withdraw(double amount) {
-		balance -= amount + 5.0;
+		balance -= amount;
 	}
 
 	public void deposit(double amount) {
-		balance += amount;
+		balance += amount;		
 	}
+
 }

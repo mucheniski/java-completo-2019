@@ -2,11 +2,11 @@ package capitulo4;
 
 import java.util.Locale;
 import java.util.Scanner;
-
-import entities.Account;
+import entities.AccountFix;
 
 public class ExercicioFixacao1 {
 	
+
 	public static void main(String[] args) {
 		
 		Locale.setDefault(Locale.US);
@@ -22,7 +22,7 @@ public class ExercicioFixacao1 {
 		System.out.print("Is there an initial deposit (y/n)? ");
 		char option = sc.next().charAt(0);
 		
-		Account account = new Account(number, holder);
+		AccountFix account = new AccountFix(number, holder);
 		
 		if (option == 'y') {
 			System.out.print("Enter a initial deposit value: ");
@@ -49,7 +49,7 @@ public class ExercicioFixacao1 {
 		System.out.println("Updated account data:");
 		System.out.println(account);
 		
-		sc.close();
+		sc.close();		
 		
 	}
 

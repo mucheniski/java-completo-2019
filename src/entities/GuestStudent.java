@@ -26,6 +26,7 @@ public class GuestStudent {
 		this.email = email;
 	}	
 	
+	@Override
 	public String toString() {
 		return name + ", " + email;
 	}

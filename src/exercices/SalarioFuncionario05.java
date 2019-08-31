@@ -17,7 +17,7 @@ public class SalarioFuncionario05 {
 		horasTrabalhadas = sc.nextInt();
 		valorHora = sc.nextDouble();
 		
-		salario = (double) horasTrabalhadas * valorHora;
+		salario = horasTrabalhadas * valorHora;
 		
 		System.out.println("NUMBER = " + numero);
 		System.out.printf("SALARY = U$ %.2f%n ", salario);

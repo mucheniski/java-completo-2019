@@ -70,6 +70,7 @@ public class Post {
 		comments.remove(comment);
 	}
 	
+	@Override
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append(title + "\n");
