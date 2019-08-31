@@ -1,4 +1,4 @@
-package capitulo5;
+package capitulo7;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -35,4 +35,5 @@ public class ResolvidoStringBuilder {
 		System.out.println(p1);
 		System.out.println(p2);
 	}
-}v
+	
+}
