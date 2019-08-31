@@ -41,7 +41,7 @@ public class FixacaoOrder {
 		
 		Order order = new Order(new Date(), OrderStatus.valueOf(status), client);		
 		
-		System.out.println("How many items to this order? ");
+		System.out.println("How many items to this order? ");    
 		int qtdItems = sc.nextInt();
 		
 		for (int i = 1; i <= qtdItems; i++) {

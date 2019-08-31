@@ -1,20 +1,24 @@
-package entities;
-
 public class Account {
-	
-	private int number;
-	private String holder;	
-	private double balance;
-	
-	public Account() {}
 
-	public Account(int number, String holder) {		
+	private Integer number;
+	private String holder;
+	protected Double balance;
+		
+	public Account() {
+	}
+	
+	public Account(Integer number, String holder, Double balance) {
 		this.number = number;
 		this.holder = holder;
+		this.balance = balance;
 	}
 
-	public int getNumber() {
+	public Integer getNumber() {
 		return number;
+	}
+
+	public void setNumber(Integer number) {
+		this.number = number;
 	}
 
 	public String getHolder() {
@@ -25,20 +29,15 @@ public class Account {
 		this.holder = holder;
 	}
 
-	public double getBalance() {
+	public Double getBalance() {
 		return balance;
 	}
-	
-	public void withdraw(double value) {
-		this.balance -= value + 5.0;
-	}
-	
-	public void deposit(double value) {
-		this.balance += value;
-	}
-	
-	public String toString() {
-		return "Account: " + number + ", Holder: " + holder + String.format(", Balance: $ %.2f%n", balance);
+
+	public void withdraw(double amount) {
+		balance -= amount + 5.0;
 	}
 
+	public void deposit(double amount) {
+		balance += amount;
+	}
 }
