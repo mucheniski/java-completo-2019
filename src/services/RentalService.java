@@ -2,6 +2,7 @@ package services;
 
 import entities.CarRental;
 import entities.Invoice;
+import interfaces.TaxService;
 
 public class RentalService {
 

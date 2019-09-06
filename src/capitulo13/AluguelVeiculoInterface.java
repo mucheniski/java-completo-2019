@@ -40,7 +40,7 @@ public class AluguelVeiculoInterface {
 
 		System.out.println("INVOICE:");
 		System.out.println("Basic payment: " + String.format("%.2f", carRental.getInvoice().getBasicPayment()));
-		System.out.println("Tax: " + String.format("%.2f", cr.getInvoice().getTax()));
+		System.out.println("Tax: " + String.format("%.2f", carRental.getInvoice().getTax()));
 		System.out.println("Total payment: " + String.format("%.2f", carRental.getInvoice().getTotalPayment()));
 		
 		sc.close();

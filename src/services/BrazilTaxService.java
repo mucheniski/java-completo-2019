@@ -1,5 +1,7 @@
 package services;
 
+import interfaces.TaxService;
+
 public class BrazilTaxService implements TaxService {
 
 	public double tax(double amount) {
